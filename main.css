@@ -1,0 +1,286 @@
+html {
+    scroll-behavior: smooth;
+    background: #f1cfe9;
+}
+
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+}
+
+/* Make everything responsive */
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Each section */
+.page {
+    min-height: 100vh;
+    padding: 40px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 🌸 Hero */
+.hero {
+    text-align: center;
+    background: linear-gradient(rgba(3, 3, 3, 0.6),rgba(231, 126, 168, 0.7)), url("couple.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: clamp(32px, 8vw, 85px);
+    color: #09080c;
+    margin-top: 3px;
+}
+
+.hero h2 {
+    font-size: 26px;
+    margin-top: 3px;
+    margin-bottom: 30px;
+    color: #e8c5c9;
+}
+
+.hero h3 {
+    margin-top: -20px;
+}
+
+.hero h4 {
+    margin-bottom: 20px;
+    font-size: clamp(16px, 4vw, 30px);
+    font-style: italic;
+}
+
+/* 📅 Calendar */
+.calendar {
+    background: linear-gradient(rgba(227, 144, 187, 0.6),rgba(238, 225, 232, 0.7));
+}
+
+.calendar-box {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+.day {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.date {
+    padding: 6px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.calendar h2 {
+    font-size: clamp(24px, 6vw, 45px);
+    margin-top: 20px;
+}
+
+.calendar h3 {
+    margin-bottom: 20px;
+}
+
+.calendar h1 {
+    margin-top: 20px;
+}
+
+.calendar h4 {
+    font-weight: lighter;
+    font-size: 16px;
+    margin-top: 2px;
+}
+
+/* Highlight wedding day */
+.special {
+    background: #ffdde1;
+    color: #ce95a8;
+    font-weight: bold;
+}
+
+/* 👰 Details */
+.details {
+    background: linear-gradient(rgba(205, 189, 197, 0.7), rgba(228, 149, 198, 0.6));
+}
+
+/* Card */
+.card {
+    background: linear-gradient(rgba(221, 194, 219, 0.6),rgba(218, 184, 211, 0.7)), url("card-bg.jpg");
+    background-size: cover;
+    background-position: center;
+
+    width: 90%;
+    max-width: 350px;
+    padding: 20px;
+
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Text */
+.bismi {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.top-text {
+    font-size: 12px;
+}
+
+.bottom-text {
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 18px;
+}
+
+.names {
+    font-size: 26px;
+}
+
+.ins {
+    font-size: 22px;
+}
+
+.date {
+    font-size: 14px;
+}
+
+.time {
+    font-size: 12px;
+}
+
+.venue {
+    font-size: 18px;
+}
+
+/* Button */
+.location-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background: linear-gradient(45deg, #e85879, #e85f83);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+/* RSVP */
+.rsvp {
+    background: linear-gradient(rgba(232, 155, 200, 0.8), rgba(214, 205, 209, 0.7));
+}
+
+/* Cards */
+.rsvp-card,
+.thank-card {
+    background: linear-gradient(rgba(221, 194, 219, 0.6),rgba(218, 184, 211, 0.7)), url("card-bg.jpg");
+
+    width: 90%;
+    max-width: 350px;
+    padding: 20px;
+    height: auto;
+
+    border-radius: 12px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+/* Inputs */
+.rsvp-card input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Button */
+.rsvp-card button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    border: none;
+    background: #c63254;
+    color: white;
+    border-radius: 20px;
+}
+
+/* Thank card */
+.thank-card h2 {
+    font-size: 28px;
+}
+
+
+.rsvp-message {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+
+.countdown-begin {
+    font-size: 25px;
+}
+
+/* Countdown */
+.countdown-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    margin-top: 15px;
+}
+
+.time-box {
+    background: #a51776;
+    width: 60px;
+    height: 70px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.time-box P{
+    color: white;
+    font-size: 10px;
+
+}
+.time-box span{
+    color: white;
+
+}
+.time-box span {
+    font-size: 16px;
+}
+
+.rsvp-card select {
+    width: 90%;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    color: #636367;
+}
+.rsvp-card input{
+    width: 90%;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
